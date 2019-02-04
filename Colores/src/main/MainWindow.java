@@ -29,7 +29,7 @@ public class MainWindow {
 	/**
 	 * Launch the application.
 	 */
-	private int azabache=0,pizarra=0,frio=0,campaña=0,plomo=0,payne=0,gris=0,platino=0,ceniza=0;
+	private int azabache=0,pizarra=0,frio=0,campaa=0,plomo=0,payne=0,gris=0,platino=0,ceniza=0;
 	private int lino=0,gris_medio=0,blanco_humo=0,aluminio=0,humo=0,elefante=0,acero=0,zinc=0,niquel=0,xanadu=0;
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
