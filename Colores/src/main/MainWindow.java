@@ -347,7 +347,7 @@ public class MainWindow {
 					
 					datos.addValue(imgG1[c], "Gris "+String.valueOf(val), "imagen 1");
 					datos2.addValue(imgG2[c], "Gris "+String.valueOf(val), "imagen 2");
-					datos3.addValue(imgG3[c], "Gris "+String.valueOf(val), "imagen 3");
+					//datos3.addValue(imgG3[c], "Gris "+String.valueOf(val), "imagen 3");
 					
 				}
 				
