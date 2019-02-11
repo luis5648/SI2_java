@@ -35,14 +35,13 @@ import logicas.*;
 public class MainWindow {
 
 	private JFrame frmImagenes;
-	
-	DefaultCategoryDataset datos,datos2,datos3;
-	JFreeChart graficaBarras,graficaBarras2,graficaBarras3;
-	
+
+	DefaultCategoryDataset datos, datos2, datos3;
+	JFreeChart graficaBarras, graficaBarras2, graficaBarras3;
+
 	private int imgG1[] = new int[28];
 	private int imgG2[] = new int[28];
 	private int imgG3[] = new int[28];
-		
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -64,36 +63,16 @@ public class MainWindow {
 		initialize();
 		datos = new DefaultCategoryDataset();
 		datos2 = new DefaultCategoryDataset();
-		graficaBarras = ChartFactory.createBarChart("Grices por promedio", 
-				"colores", 
-				"intensidad", 
-				datos,
-				PlotOrientation.VERTICAL,
-				true,
-				true,
-				false);
-		
-		graficaBarras2 = ChartFactory.createBarChart("Grices por MinMax", 
-				"colores", 
-				"intensidad", 
-				datos2,
-				PlotOrientation.VERTICAL,
-				true,
-				true,
-				false);
-		
-		graficaBarras3 = ChartFactory.createBarChart("Grices por ecuación", 
-				"colores", 
-				"intensidad", 
-				datos3,
-				PlotOrientation.HORIZONTAL,
-				true,
-				true,
-				false);
-		
+		graficaBarras = ChartFactory.createBarChart("Grices por promedio", "colores", "intensidad", datos,
+				PlotOrientation.VERTICAL, true, true, false);
+
+		graficaBarras2 = ChartFactory.createBarChart("Grices por MinMax", "colores", "intensidad", datos2,
+				PlotOrientation.VERTICAL, true, true, false);
+
+		graficaBarras3 = ChartFactory.createBarChart("Grices por ecuación", "colores", "intensidad", datos3,
+				PlotOrientation.HORIZONTAL, true, true, false);
+
 	}
-	
-	
 
 	/**
 	 * Initialize the contents of the frame.
@@ -331,9 +310,34 @@ public class MainWindow {
 					}
 
 					label_4.setIcon(new ImageIcon(bf4));
+                     
+					BufferedImage bf5 = ImageIO.read(archivoImagen);
+					int i22=0,j22=0,j=0;
+
+					int w= ip.getWidth();
+					int v= ip.getHeight();
+					int limite = 100;
+
+					int aux;
+
+					for(i22=0;i22;j++)	{
+					for(j22=0;j22;j++)	{
+					aux=bf5.getPixel(i22,j22);
+					if(aux>limite)
+					{
+					bf5.putPixel(i22,j22,255);
+					}
+					else
+					{
+					bf5.putPixel(i22,j22,0);
+					}
+
+					}
+					}
+
 
 					
-
+					 
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -378,17 +382,10 @@ public class MainWindow {
 				vg3.getContentPane().add(pg3);
 				vg3.pack();
 				vg3.setVisible(true);
-			}
-		});
-		btnSeleccionar.setBounds(59, 176, 110, 23);
-		frmImagenes.getContentPane().add(btnSeleccionar);
+			}});btnSeleccionar.setBounds(59,176,110,23);frmImagenes.getContentPane().add(btnSeleccionar);
 
-	}
+	JScrollPane scrollPane_5 = new JScrollPane();scrollPane_5.setBounds(38,206,203,137);frmImagenes.getContentPane().add(scrollPane_5);
 
-	/*
-	 * public static BufferedImage imageToBufferedImage(Image im) { BufferedImage bi
-	 * = new BufferedImage(im.getWidth(null), im.getHeight(null),
-	 * BufferedImage.TYPE_INT_RGB); Graphics bg = bi.getGraphics(); bg.drawImage(im,
-	 * 0, 0, null); bg.dispose(); return bi; }
-	 */
-}
+	JLabel black_and_white = new JLabel("");scrollPane_5.setViewportView(label_5);
+
+}}
