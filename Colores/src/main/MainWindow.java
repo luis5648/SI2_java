@@ -130,14 +130,12 @@ public class MainWindow {
 				ImageIcon img = new ImageIcon(ruta);
 
 				label.setIcon(img);
-				
-				
-				for(int k =0;k<imgG2.length-1;k++) {
-					imgG1[k]=0;
-					imgG2[k]=0;
-					imgG3[k]=0;
-					
-					
+
+				for (int k = 0; k < imgG2.length - 1; k++) {
+					imgG1[k] = 0;
+					imgG2[k] = 0;
+					imgG3[k] = 0;
+
 				}
 
 				// gris:
@@ -156,34 +154,61 @@ public class MainWindow {
 
 							Color gris = new Color(grayLevel, grayLevel, grayLevel);
 							bf.setRGB(x, y, gris.getRGB());
-							
-							if(grayLevel==229 && grayLevel==228 && grayLevel==226) imgG1[0]++;
-		                    if(grayLevel==205 && grayLevel==205 && grayLevel==205) imgG1[1]++;
-		                    if(grayLevel==215 && grayLevel==208 && grayLevel==183) imgG1[2]++;
-		                    if(grayLevel==190 && grayLevel==190 && grayLevel==190) imgG1[3]++;
-		                    if(grayLevel==180 && grayLevel==188 && grayLevel==192) imgG1[4]++;
-		                    if(grayLevel==185 && grayLevel==184 && grayLevel==181) imgG1[5]++;
-		                    if(grayLevel==145 && grayLevel==163 && grayLevel==176) imgG1[6]++;
-		                    if(grayLevel==145 && grayLevel==163 && grayLevel==176) imgG1[7]++;
-		                    if(grayLevel==150 && grayLevel==152 && grayLevel==154) imgG1[8]++;
-		                    if(grayLevel==144 && grayLevel==144 && grayLevel==144) imgG1[9]++;
-		                    if(grayLevel==155 && grayLevel==143 && grayLevel==121) imgG1[10]++;
-		                    if(grayLevel==145 && grayLevel==136 && grayLevel==139) imgG1[11]++;
-		                    if(grayLevel==139 && grayLevel==133 && grayLevel==137) imgG1[12]++;
-		                    if(grayLevel==129 && grayLevel==135 && grayLevel==139) imgG1[13]++;
-		                    if(grayLevel==132 && grayLevel==132 && grayLevel==130) imgG1[14]++;
-		                    if(grayLevel==143 && grayLevel==129 && grayLevel==127) imgG1[15]++;
-		                    if(grayLevel==115 && grayLevel==134 && grayLevel==120) imgG1[16]++;
-		                    if(grayLevel==128 && grayLevel==128 && grayLevel==128) imgG1[17]++;
-		                    if(grayLevel==135 && grayLevel==125 && grayLevel==96) imgG1[18]++;
-		                    if(grayLevel==135 && grayLevel==121 && grayLevel==78) imgG1[19]++;
-		                    if(grayLevel==83 && grayLevel==104 && grayLevel==120) imgG1[20]++;
-		                    if(grayLevel==93 && grayLevel==103 && grayLevel==112) imgG1[21]++;
-		                    if(grayLevel==102 && grayLevel==102 && grayLevel==102) imgG1[22]++;
-		                    if(grayLevel==89 && grayLevel==100 && grayLevel==106) imgG1[23]++;
-		                    if(grayLevel==73 && grayLevel==96 && grayLevel==99) imgG1[24]++;
-		                    if(grayLevel==85 && grayLevel==85&& grayLevel==85) imgG1[25]++;
-		                    if(grayLevel==52 && grayLevel==52 && grayLevel==52) imgG1[26]++;
+
+							if (grayLevel == 229 && grayLevel == 228 && grayLevel == 226)
+								imgG1[0]++;
+							if (grayLevel == 205 && grayLevel == 205 && grayLevel == 205)
+								imgG1[1]++;
+							if (grayLevel == 215 && grayLevel == 208 && grayLevel == 183)
+								imgG1[2]++;
+							if (grayLevel == 190 && grayLevel == 190 && grayLevel == 190)
+								imgG1[3]++;
+							if (grayLevel == 180 && grayLevel == 188 && grayLevel == 192)
+								imgG1[4]++;
+							if (grayLevel == 185 && grayLevel == 184 && grayLevel == 181)
+								imgG1[5]++;
+							if (grayLevel == 145 && grayLevel == 163 && grayLevel == 176)
+								imgG1[6]++;
+							if (grayLevel == 145 && grayLevel == 163 && grayLevel == 176)
+								imgG1[7]++;
+							if (grayLevel == 150 && grayLevel == 152 && grayLevel == 154)
+								imgG1[8]++;
+							if (grayLevel == 144 && grayLevel == 144 && grayLevel == 144)
+								imgG1[9]++;
+							if (grayLevel == 155 && grayLevel == 143 && grayLevel == 121)
+								imgG1[10]++;
+							if (grayLevel == 145 && grayLevel == 136 && grayLevel == 139)
+								imgG1[11]++;
+							if (grayLevel == 139 && grayLevel == 133 && grayLevel == 137)
+								imgG1[12]++;
+							if (grayLevel == 129 && grayLevel == 135 && grayLevel == 139)
+								imgG1[13]++;
+							if (grayLevel == 132 && grayLevel == 132 && grayLevel == 130)
+								imgG1[14]++;
+							if (grayLevel == 143 && grayLevel == 129 && grayLevel == 127)
+								imgG1[15]++;
+							if (grayLevel == 115 && grayLevel == 134 && grayLevel == 120)
+								imgG1[16]++;
+							if (grayLevel == 128 && grayLevel == 128 && grayLevel == 128)
+								imgG1[17]++;
+							if (grayLevel == 135 && grayLevel == 125 && grayLevel == 96)
+								imgG1[18]++;
+							if (grayLevel == 135 && grayLevel == 121 && grayLevel == 78)
+								imgG1[19]++;
+							if (grayLevel == 83 && grayLevel == 104 && grayLevel == 120)
+								imgG1[20]++;
+							if (grayLevel == 93 && grayLevel == 103 && grayLevel == 112)
+								imgG1[21]++;
+							if (grayLevel == 102 && grayLevel == 102 && grayLevel == 102)
+								imgG1[22]++;
+							if (grayLevel == 89 && grayLevel == 100 && grayLevel == 106)
+								imgG1[23]++;
+							if (grayLevel == 73 && grayLevel == 96 && grayLevel == 99)
+								imgG1[24]++;
+							if (grayLevel == 85 && grayLevel == 85 && grayLevel == 85)
+								imgG1[25]++;
+							if (grayLevel == 52 && grayLevel == 52 && grayLevel == 52)
+								imgG1[26]++;
 
 						}
 					}
@@ -228,34 +253,61 @@ public class MainWindow {
 
 							Color grisMM = new Color(grayLevel, grayLevel, grayLevel);
 							bf3.setRGB(x, y, grisMM.getRGB());
-							
-							if(grayLevel==229 && grayLevel==228 && grayLevel==226) imgG2[0]++;
-		                    if(grayLevel==205 && grayLevel==205 && grayLevel==205) imgG2[1]++;
-		                    if(grayLevel==215 && grayLevel==208 && grayLevel==183) imgG2[2]++;
-		                    if(grayLevel==190 && grayLevel==190 && grayLevel==190) imgG2[3]++;
-		                    if(grayLevel==180 && grayLevel==188 && grayLevel==192) imgG2[4]++;
-		                    if(grayLevel==185 && grayLevel==184 && grayLevel==181) imgG2[5]++;
-		                    if(grayLevel==145 && grayLevel==163 && grayLevel==176) imgG2[6]++;
-		                    if(grayLevel==145 && grayLevel==163 && grayLevel==176) imgG2[7]++;
-		                    if(grayLevel==150 && grayLevel==152 && grayLevel==154) imgG2[8]++;
-		                    if(grayLevel==144 && grayLevel==144 && grayLevel==144) imgG2[9]++;
-		                    if(grayLevel==155 && grayLevel==143 && grayLevel==121) imgG2[10]++;
-		                    if(grayLevel==145 && grayLevel==136 && grayLevel==139) imgG2[11]++;
-		                    if(grayLevel==139 && grayLevel==133 && grayLevel==137) imgG2[12]++;
-		                    if(grayLevel==129 && grayLevel==135 && grayLevel==139) imgG2[13]++;
-		                    if(grayLevel==132 && grayLevel==132 && grayLevel==130) imgG2[14]++;
-		                    if(grayLevel==143 && grayLevel==129 && grayLevel==127) imgG2[15]++;
-		                    if(grayLevel==115 && grayLevel==134 && grayLevel==120) imgG2[16]++;
-		                    if(grayLevel==128 && grayLevel==128 && grayLevel==128) imgG2[17]++;
-		                    if(grayLevel==135 && grayLevel==125 && grayLevel==96) imgG2[18]++;
-		                    if(grayLevel==135 && grayLevel==121 && grayLevel==78) imgG2[19]++;
-		                    if(grayLevel==83 && grayLevel==104 && grayLevel==120) imgG2[20]++;
-		                    if(grayLevel==93 && grayLevel==103 && grayLevel==112) imgG2[21]++;
-		                    if(grayLevel==102 && grayLevel==102 && grayLevel==102) imgG2[22]++;
-		                    if(grayLevel==89 && grayLevel==100 && grayLevel==106) imgG2[23]++;
-		                    if(grayLevel==73 && grayLevel==96 && grayLevel==99) imgG2[24]++;
-		                    if(grayLevel==85 && grayLevel==85&& grayLevel==85) imgG2[25]++;
-		                    if(grayLevel==52 && grayLevel==52 && grayLevel==52) imgG2[26]++;
+
+							if (grayLevel == 229 && grayLevel == 228 && grayLevel == 226)
+								imgG2[0]++;
+							if (grayLevel == 205 && grayLevel == 205 && grayLevel == 205)
+								imgG2[1]++;
+							if (grayLevel == 215 && grayLevel == 208 && grayLevel == 183)
+								imgG2[2]++;
+							if (grayLevel == 190 && grayLevel == 190 && grayLevel == 190)
+								imgG2[3]++;
+							if (grayLevel == 180 && grayLevel == 188 && grayLevel == 192)
+								imgG2[4]++;
+							if (grayLevel == 185 && grayLevel == 184 && grayLevel == 181)
+								imgG2[5]++;
+							if (grayLevel == 145 && grayLevel == 163 && grayLevel == 176)
+								imgG2[6]++;
+							if (grayLevel == 145 && grayLevel == 163 && grayLevel == 176)
+								imgG2[7]++;
+							if (grayLevel == 150 && grayLevel == 152 && grayLevel == 154)
+								imgG2[8]++;
+							if (grayLevel == 144 && grayLevel == 144 && grayLevel == 144)
+								imgG2[9]++;
+							if (grayLevel == 155 && grayLevel == 143 && grayLevel == 121)
+								imgG2[10]++;
+							if (grayLevel == 145 && grayLevel == 136 && grayLevel == 139)
+								imgG2[11]++;
+							if (grayLevel == 139 && grayLevel == 133 && grayLevel == 137)
+								imgG2[12]++;
+							if (grayLevel == 129 && grayLevel == 135 && grayLevel == 139)
+								imgG2[13]++;
+							if (grayLevel == 132 && grayLevel == 132 && grayLevel == 130)
+								imgG2[14]++;
+							if (grayLevel == 143 && grayLevel == 129 && grayLevel == 127)
+								imgG2[15]++;
+							if (grayLevel == 115 && grayLevel == 134 && grayLevel == 120)
+								imgG2[16]++;
+							if (grayLevel == 128 && grayLevel == 128 && grayLevel == 128)
+								imgG2[17]++;
+							if (grayLevel == 135 && grayLevel == 125 && grayLevel == 96)
+								imgG2[18]++;
+							if (grayLevel == 135 && grayLevel == 121 && grayLevel == 78)
+								imgG2[19]++;
+							if (grayLevel == 83 && grayLevel == 104 && grayLevel == 120)
+								imgG2[20]++;
+							if (grayLevel == 93 && grayLevel == 103 && grayLevel == 112)
+								imgG2[21]++;
+							if (grayLevel == 102 && grayLevel == 102 && grayLevel == 102)
+								imgG2[22]++;
+							if (grayLevel == 89 && grayLevel == 100 && grayLevel == 106)
+								imgG2[23]++;
+							if (grayLevel == 73 && grayLevel == 96 && grayLevel == 99)
+								imgG2[24]++;
+							if (grayLevel == 85 && grayLevel == 85 && grayLevel == 85)
+								imgG2[25]++;
+							if (grayLevel == 52 && grayLevel == 52 && grayLevel == 52)
+								imgG2[26]++;
 
 						}
 					}
@@ -276,116 +328,127 @@ public class MainWindow {
 							Color N = new Color(grayLevel, grayLevel, grayLevel);
 
 							bf4.setRGB(x, y, N.getRGB());
-							
-							if(grayLevel==229 && grayLevel==228 && grayLevel==226) imgG3[0]++;
-		                    if(grayLevel==205 && grayLevel==205 && grayLevel==205) imgG3[1]++;
-		                    if(grayLevel==215 && grayLevel==208 && grayLevel==183) imgG3[2]++;
-		                    if(grayLevel==190 && grayLevel==190 && grayLevel==190) imgG3[3]++;
-		                    if(grayLevel==180 && grayLevel==188 && grayLevel==192) imgG3[4]++;
-		                    if(grayLevel==185 && grayLevel==184 && grayLevel==181) imgG3[5]++;
-		                    if(grayLevel==145 && grayLevel==163 && grayLevel==176) imgG3[6]++;
-		                    if(grayLevel==145 && grayLevel==163 && grayLevel==176) imgG3[7]++;
-		                    if(grayLevel==150 && grayLevel==152 && grayLevel==154) imgG3[8]++;
-		                    if(grayLevel==144 && grayLevel==144 && grayLevel==144) imgG3[9]++;
-		                    if(grayLevel==155 && grayLevel==143 && grayLevel==121) imgG3[10]++;
-		                    if(grayLevel==145 && grayLevel==136 && grayLevel==139) imgG3[11]++;
-		                    if(grayLevel==139 && grayLevel==133 && grayLevel==137) imgG3[12]++;
-		                    if(grayLevel==129 && grayLevel==135 && grayLevel==139) imgG3[13]++;
-		                    if(grayLevel==132 && grayLevel==132 && grayLevel==130) imgG3[14]++;
-		                    if(grayLevel==143 && grayLevel==129 && grayLevel==127) imgG3[15]++;
-		                    if(grayLevel==115 && grayLevel==134 && grayLevel==120) imgG3[16]++;
-		                    if(grayLevel==128 && grayLevel==128 && grayLevel==128) imgG3[17]++;
-		                    if(grayLevel==135 && grayLevel==125 && grayLevel==96) imgG3[18]++;
-		                    if(grayLevel==135 && grayLevel==121 && grayLevel==78) imgG3[19]++;
-		                    if(grayLevel==83 && grayLevel==104 && grayLevel==120) imgG3[20]++;
-		                    if(grayLevel==93 && grayLevel==103 && grayLevel==112) imgG3[21]++;
-		                    if(grayLevel==102 && grayLevel==102 && grayLevel==102) imgG3[22]++;
-		                    if(grayLevel==89 && grayLevel==100 && grayLevel==106) imgG3[23]++;
-		                    if(grayLevel==73 && grayLevel==96 && grayLevel==99) imgG3[24]++;
-		                    if(grayLevel==85 && grayLevel==85&& grayLevel==85) imgG3[25]++;
-		                    if(grayLevel==52 && grayLevel==52 && grayLevel==52) imgG3[26]++;
+
+							if (grayLevel == 229 && grayLevel == 228 && grayLevel == 226)
+								imgG3[0]++;
+							if (grayLevel == 205 && grayLevel == 205 && grayLevel == 205)
+								imgG3[1]++;
+							if (grayLevel == 215 && grayLevel == 208 && grayLevel == 183)
+								imgG3[2]++;
+							if (grayLevel == 190 && grayLevel == 190 && grayLevel == 190)
+								imgG3[3]++;
+							if (grayLevel == 180 && grayLevel == 188 && grayLevel == 192)
+								imgG3[4]++;
+							if (grayLevel == 185 && grayLevel == 184 && grayLevel == 181)
+								imgG3[5]++;
+							if (grayLevel == 145 && grayLevel == 163 && grayLevel == 176)
+								imgG3[6]++;
+							if (grayLevel == 145 && grayLevel == 163 && grayLevel == 176)
+								imgG3[7]++;
+							if (grayLevel == 150 && grayLevel == 152 && grayLevel == 154)
+								imgG3[8]++;
+							if (grayLevel == 144 && grayLevel == 144 && grayLevel == 144)
+								imgG3[9]++;
+							if (grayLevel == 155 && grayLevel == 143 && grayLevel == 121)
+								imgG3[10]++;
+							if (grayLevel == 145 && grayLevel == 136 && grayLevel == 139)
+								imgG3[11]++;
+							if (grayLevel == 139 && grayLevel == 133 && grayLevel == 137)
+								imgG3[12]++;
+							if (grayLevel == 129 && grayLevel == 135 && grayLevel == 139)
+								imgG3[13]++;
+							if (grayLevel == 132 && grayLevel == 132 && grayLevel == 130)
+								imgG3[14]++;
+							if (grayLevel == 143 && grayLevel == 129 && grayLevel == 127)
+								imgG3[15]++;
+							if (grayLevel == 115 && grayLevel == 134 && grayLevel == 120)
+								imgG3[16]++;
+							if (grayLevel == 128 && grayLevel == 128 && grayLevel == 128)
+								imgG3[17]++;
+							if (grayLevel == 135 && grayLevel == 125 && grayLevel == 96)
+								imgG3[18]++;
+							if (grayLevel == 135 && grayLevel == 121 && grayLevel == 78)
+								imgG3[19]++;
+							if (grayLevel == 83 && grayLevel == 104 && grayLevel == 120)
+								imgG3[20]++;
+							if (grayLevel == 93 && grayLevel == 103 && grayLevel == 112)
+								imgG3[21]++;
+							if (grayLevel == 102 && grayLevel == 102 && grayLevel == 102)
+								imgG3[22]++;
+							if (grayLevel == 89 && grayLevel == 100 && grayLevel == 106)
+								imgG3[23]++;
+							if (grayLevel == 73 && grayLevel == 96 && grayLevel == 99)
+								imgG3[24]++;
+							if (grayLevel == 85 && grayLevel == 85 && grayLevel == 85)
+								imgG3[25]++;
+							if (grayLevel == 52 && grayLevel == 52 && grayLevel == 52)
+								imgG3[26]++;
 
 						}
 
 					}
 
 					label_4.setIcon(new ImageIcon(bf4));
-                     
-					BufferedImage bf5 = ImageIO.read(archivoImagen);
-					int i22=0,j22=0,j=0;
 
-					int w= ip.getWidth();
-					int v= ip.getHeight();
-					int limite = 100;
+					/*
+					 * BufferedImage bf5 = ImageIO.read(archivoImagen); int i22=0,j22=0,j=0;
+					 * 
+					 * int w= ip.getWidth(); int v= ip.getHeight(); int limite = 100;
+					 * 
+					 * int aux;
+					 * 
+					 * for(i22=0;i22;j++) { for(j22=0;j22;j++) { aux=bf5.getPixel(i22,j22);
+					 * if(aux>limite) { bf5.putPixel(i22,j22,255); } else { bf5.putPixel(i22,j22,0);
+					 * }
+					 * 
+					 * } }
+					 */
 
-					int aux;
-
-					for(i22=0;i22;j++)	{
-					for(j22=0;j22;j++)	{
-					aux=bf5.getPixel(i22,j22);
-					if(aux>limite)
-					{
-					bf5.putPixel(i22,j22,255);
-					}
-					else
-					{
-					bf5.putPixel(i22,j22,0);
-					}
-
-					}
-					}
-
-
-					
-					 
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-	
-				
-				//datos de la grafica
-				
-				for(int c =0;c<imgG3.length-1;c++) {
-					int val=c+1;
-					
-					datos.addValue(imgG1[c], "Gris "+String.valueOf(val), "imagen 1");
-					datos2.addValue(imgG2[c], "Gris "+String.valueOf(val), "imagen 2");
-					//datos3.addValue(imgG3[c], "Gris "+String.valueOf(val), "imagen 3");
-					
+
+				// datos de la grafica
+
+				for (int c = 0; c < imgG3.length - 1; c++) {
+					int val = c + 1;
+
+					datos.addValue(imgG1[c], "Gris " + String.valueOf(val), "imagen 1");
+					datos2.addValue(imgG2[c], "Gris " + String.valueOf(val), "imagen 2");
+					// datos3.addValue(imgG3[c], "Gris "+String.valueOf(val), "imagen 3");
+
 				}
-				
-				
-				
-				
-				
-				//contenedor de la grafica 1
-				
+
+				// contenedor de la grafica 1
+
 				ChartPanel pg = new ChartPanel(graficaBarras);
 				JFrame vg = new JFrame("Grafica");
 				vg.getContentPane().add(pg);
 				vg.pack();
 				vg.setVisible(true);
-				
-				//contenedor de la grafica 2
-				
+
+				// contenedor de la grafica 2
+
 				ChartPanel pg2 = new ChartPanel(graficaBarras2);
 				JFrame vg2 = new JFrame("Grafica");
 				vg2.getContentPane().add(pg2);
 				vg2.pack();
 				vg2.setVisible(true);
-				
-				//contenedor de la grafica 3
-				
+
+				// contenedor de la grafica 3
+
 				ChartPanel pg3 = new ChartPanel(graficaBarras3);
 				JFrame vg3 = new JFrame("Grafica");
 				vg3.getContentPane().add(pg3);
 				vg3.pack();
 				vg3.setVisible(true);
-			}});btnSeleccionar.setBounds(59,176,110,23);frmImagenes.getContentPane().add(btnSeleccionar);
+			}
+		});
+		btnSeleccionar.setBounds(59, 176, 110, 23);
+		frmImagenes.getContentPane().add(btnSeleccionar);
 
-	JScrollPane scrollPane_5 = new JScrollPane();scrollPane_5.setBounds(38,206,203,137);frmImagenes.getContentPane().add(scrollPane_5);
+		
 
-	JLabel black_and_white = new JLabel("");scrollPane_5.setViewportView(label_5);
-
-}}
+	}
+}
